@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Web y Eventos</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/3-col-portfolio.css" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+<!-- Plugin CSS -->
+<link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+<link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css">
+<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#"><img src="img/wye_logo.png" alt="Web y Eventos"></a> </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    
+    <div class="collapse navbar-collapse"  id="bs-example-navbar-collapse-1">
+      <div class="pull">
+        <ul class="nav navbar-nav">
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Salones <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li class="divider"></li>
+              <li><a href="#">Salones de Fiestas</a></li>
+              <li><a href="#">Hoteles</a></li>
+              <li><a href="#">Quintas para Eventos</a></li>
+              <li><a href="#">Estancias</a></li>
+              <li><a href="#">Islas</a></li>
+              <li><a href="#">Barcos</a></li>
+              <li><a href="#">Restaurantes</a></li>
+              <li><a href="#">Confiterías</a></li>
+              <li><a href="#">Boliches</a></li>
+              <li><a href="#">Bares</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-submenu"> <a class="test" href="#">Todo para el civil<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">CGP</a></li>
+                  <li><a href="#">Registro civiles</a></li>
+                  <li><a href="#">Iglesias</a></li>
+                  <li><a href="#">Templos</a></li>
+                  <li><a href="#">Mezquitas</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Servicios<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li class="divider"></li>
+              <li class="dropdown-submenu"> <a class="test" href="#">Catering<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Catering para Fiestas</a></li>
+                  <li><a href="#">Barras de Tragos - Café</a></li>
+                  <li><a href="#">Pastelería - Mesa Dulce</a></li>
+                  <li><a href="#">Vajilla y Mantelería</a></li>
+                  <li><a href="#">Vinotecas</a></li>
+                  <li><a href="#">Alquiler - Mesas y Sillas</a></li>
+                  <li><a href="#">Descartables</a></li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li class="dropdown-submenu"> <a class="test" href="#">Servicios para Eventos<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Organización de Eventos</a></li>
+                  <li><a href="#">Disc Jockey</a></li>
+                  <li><a href="#">Foto & Video</a></li>
+                  <li><a href="#">Tarjetas e Invitaciones</a></li>
+                  <li><a href="#">Cotillón</a></li>
+                  <li><a href="#">Souvenirs</a></li>
+                  <li><a href="#">Casa de Regalos</a></li>
+                  <li><a href="#">Fuegos Artificiales</a></li>
+                  <li><a href="#">Marketing</a></li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li class="dropdown-submenu"> <a class="test" href="#">Vestidos y más...<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Vestidos de Novia</a></li>
+                  <li><a href="#">Ropa de Etiqueta</a></li>
+                  <li><a href="#">Maquillaje</a></li>
+                  <li><a href="#">Salón de belleza</a></li>
+                  <li><a href="#">Accesorios</a></li>
+                  <li><a href="#">Ceremonias</a></li>
+                  <li><a href="#">Velas para fiestas</a></li>
+                  <li><a href="#">Flores y ramos</a></li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li class="dropdown-submenu"> <a class="test" href="#">Ambientación<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ambientación & Decoración</a></li>
+                  <li><a href="#">Alquiler de living</a></li>
+                  <li><a href="#">Carpas</a></li>
+                  <li><a href="#">Equipamiento</a></li>
+                  <li><a href="#">Grupos Electrógenos</a></li>
+                  <li><a href="#">otros</a></li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li><a href="#">Viajes y Destinos</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Infantiles<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Salones Infantiles</a></li>
+              <li><a href="#">Animaciones Infantiles</a></li>
+              <li><a href="#">Ambientación Infantil</a></li>
+              <li><a href="#">Plazas Blandas</a></li>
+              <li><a href="#">Alquiler de Inflables</a></li>
+              <li><a href="#">Alquiler de Juegos</a></li>
+              <li><a href="#">Cotillón - Disfraces</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Shows<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li class="dropdown-submenu"> <a class="test" href="#">Bandas<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Bandas en Vivo</a></li>
+                  <li><a href="#">Grupos musicales</a></li>
+                  <li><a href="#">Covers</a></li>
+                  <li><a href="#">Tributos</a></li>
+                  <li><a href="#">Shows Coreográficos</a></li>
+                  <li><a href="#">Shows para Recepciones</a></li>
+                  <li><a href="#">Bandas de Jazz</a></li>
+                  <li><a href="#">Mariachis</a></li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li><a href="#">Batucadas y Murgas</a></li>
+              <li><a href="#">Magos e Ilusionistas</a></li>
+              <li><a href="#">Cantantes</a></li>
+              <li><a href="#">Cómicos</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-submenu"> <a class="test" href="#">Espectáculos<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Tango</a></li>
+                  <li><a href="#">Odaliscas</a></li>
+                  <li><a href="#">Stand Up</a></li>
+                  <li><a href="#">Robot Luminoso</a></li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li class="dropdown-submenu"> <a class="test" href="#">Animación<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Animadores</a></li>
+                  <li><a href="#">Locutores</a></li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li><a href="#">Productora Artística</a></li>
+              <li><a href="#">Varios</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="pull-left">
+              <form class="navbar-form navbar-left" role="search" >
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Buscar por nombre">
+                </div>
+                <!--<button type="submit" class="btn btn-default">Enviar</button>-->
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container --> 
+</nav>
+
+<!-- Page Content -->
+<div class="container"> 
+  
+  <!-- Page Header -->
+  <div class="row">
+    <div class="col-lg-7">
+      <h1 class="page-header">Web y Eventos <small>Salones de Fiestas y Servicios para Eventos</small> </h1>
+    </div>
+    <div class="col-lg-1">
+      <div>
+        <button type="button" class="btn btn-default" title="Agregá a Favoritos"> <span class="glyphicon glyphicon-heart"><span class="corazon"></span></span></button>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <ol class="breadcrumb">
+        <li><a href="#">Organizá tu Fiesta</a></li>
+        <li><a href="#">Registrate</a></li>
+        <li class="active">Anunciante</li>
+      </ol>
+    </div>
+  </div>
+</div>
+<!-- /.row --> 
+<br>
+<!-- Projects Row -->
+
+<div class="formito">
+  <div class="col-lg-4"></div>
+  <div class="row">
+    <div class="col-lg-6">
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Encontrá lo que Buscas!">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="¿Donde Buscas?">
+        </div>
+        <button type="submit" class="btn btn-ttc">Buscar</button>
+      </form>
+    </div>
+  </div>
+  <div class="col-lg-2"></div>
+</div>
+<div class="container"> 
+  <!-- Page Content -->
+  <div class="container"> 
+    
+    <!-- Portfolio Item Heading -->
+    
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-lg-3"> <img src="puro-pilar/puro-pilar-logo.jpg" alt="Puro Pilar Eventos"> </div>
+        <div class="col-lg-6">
+          <h3> Puro Pilar Eventos <small>Tres salones para Fiestas</small> </h3>
+          <p><span class="direccion">Colectora Panamericana Ramal Pilar Km 53 - Pilar - Buenos Aires</span></p>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <button type="button" class="btn btn-ttc" title="Teléfono"> <span class="glyphicon glyphicon-earphone"></span> </button>
+            <button type="button" class="btn btn-ttc" title="Agregá a Favoritos"> <span class="glyphicon glyphicon-heart"></span> </button>
+            <button type="button" class="btn btn-ttc" title="Sitio Web" > Web</button>
+          </div>
+          <div> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- /.row --> 
+  
+  <!-- Portfolio Item Row -->
+  <div class="row">
+    <div class="col-md-8"> <!-- #region Jssor Slider Begin --> 
+      <!-- Generator: Jssor Slider Maker --> 
+      <!-- Source: http://www.jssor.com --> 
+      <!-- This code works without jquery library. -->
+      <div class="galeria"> 
+        <script src="image-gallery/js/jssor.slider-22.0.15.min.js" type="text/javascript" data-library="jssor.slider" data-version="22.0.15"></script> 
+        <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1200,x:0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:-0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:-0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:-0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,$Cols:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:0.3,$Rows:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:-0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,$Rows:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:-0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,$Delay:20,$Clip:3,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,$Delay:20,$Clip:3,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,$Delay:20,$Clip:12,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,$Delay:20,$Clip:12,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Cols: 10,
+                $SpacingX: 8,
+                $SpacingY: 8,
+                $Align: 360
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 800);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*responsive code end*/
+        };
+    </script> 
+        <!-- <style>
+        
+    </style>-->
+        <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 456px; overflow: hidden; visibility: hidden; background-color: #24262e;"> 
+          <!-- Loading Screen -->
+          <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+          </div>
+          <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 356px; overflow: hidden;">
+            <div data-p="144.50"> <img data-u="image" src="image-gallery/img/01.jpg" alt="Puro Pilar Eventos 1"/> <img data-u="thumb" src="image-gallery/img/thumb-01.jpg" alt="Puro Pilar Eventos 1"/> </div>
+            <div data-p="144.50" style="display:none;"> <img data-u="image" src="image-gallery/img/02.jpg" alt="Puro Pilar Eventos 2"/> <img data-u="thumb" src="image-gallery/img/thumb-02.jpg" alt="Puro Pilar Eventos 2"/> </div>
+            <div data-p="144.50" style="display:none;"> <img data-u="image" src="image-gallery/img/03.jpg" alt="Puro Pilar Eventos 3"/> <img data-u="thumb" src="image-gallery/img/thumb-03.jpg" alt="Puro Pilar Eventos 3"/> </div>
+            <div data-p="144.50" style="display:none;"> <img data-u="image" src="image-gallery/img/04.jpg" alt="Puro Pilar Eventos 4" /> <img data-u="thumb" src="image-gallery/img/thumb-04.jpg" alt="Puro Pilar Eventos 4"/> </div>
+            <div data-p="144.50" style="display:none;"> <img data-u="image" src="image-gallery/img/05.jpg" alt="Puro Pilar Eventos 5"/> <img data-u="thumb" src="image-gallery/img/thumb-05.jpg" alt="Puro Pilar Eventos 5"/> </div>
+            <div data-p="144.50" style="display:none;"> <img data-u="image" src="image-gallery/img/06.jpg" alt="Puro Pilar Eventos 6"/> <img data-u="thumb" src="image-gallery/img/thumb-06.jpg" alt="Puro Pilar Eventos 6"/> </div>
+            <div data-p="144.50" style="display:none;"> <img data-u="image" src="image-gallery/img/07.jpg" alt="Puro Pilar Eventos 7"/> <img data-u="thumb" src="image-gallery/img/thumb-07.jpg" alt="Puro Pilar Eventos 7"/> </div>
+            <div data-p="144.50" style="display:none;"> <img data-u="image" src="image-gallery/img/08.jpg" alt="Puro Pilar Eventos 8"/> <img data-u="thumb" src="image-gallery/img/thumb-08.jpg" alt="Puro Pilar Eventos 8"/> </div>
+            <div data-p="144.50" style="display:none;"> <img data-u="image" src="image-gallery/img/09.jpg" alt="Puro Pilar Eventos 9"/> <img data-u="thumb" src="image-gallery/img/thumb-09.jpg" alt="Puro Pilar Eventos 9"/> </div>
+            <div data-p="144.50" style="display:none;"> <img data-u="image" src="image-gallery/img/10.jpg" alt="Puro Pilar Eventos 10"/> <img data-u="thumb" src="image-gallery/img/thumb-10.jpg" alt="Puro Pilar Eventos 10"/> </div>
+            <a data-u="any" href="http://www.jssor.com" style="display:none">Image Gallery</a>
+            <div data-p="144.50" style="display:none;"> <img data-u="image" src="image-gallery/img/11.jpg" alt="Puro Pilar Eventos 11"/> <img data-u="thumb" src="image-gallery/img/thumb-11.jpg" alt="Puro Pilar Eventos 11"/> </div>
+            <div data-p="144.50" style="display:none;"> <img data-u="image" src="image-gallery/img/12.jpg" alt="Puro Pilar Eventos 12"/> <img data-u="thumb" src="image-gallery/img/thumb-12.jpg" alt="Puro Pilar Eventos 12"/> </div>
+          </div>
+          <!-- Thumbnail Navigator -->
+          <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1"> 
+            <!-- Thumbnail Item Skin Begin -->
+            <div data-u="slides" style="cursor: default;">
+              <div data-u="prototype" class="p">
+                <div class="w">
+                  <div data-u="thumbnailtemplate" class="t"></div>
+                </div>
+                <div class="c"></div>
+              </div>
+            </div>
+            <!-- Thumbnail Item Skin End --> 
+          </div>
+          <!-- Arrow Navigator --> 
+          <span data-u="arrowleft" class="jssora05l" style="top:158px;left:8px;width:40px;height:40px;"></span> <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;"></span> </div>
+        <script type="text/javascript">jssor_1_slider_init();</script></div>
+      <!-- #endregion Jssor Slider End --> <br>
+      <div class="descript">
+        <p><em>Un espacio privilegiado para eventos tanto sociales como corporativos, ubicado en Pilar, con un acceso inmejorable, sobre colectora de Panamericana Km. 53</em></p>
+        <p><em>Una propuesta para aquellos que buscan el más alto nivel, exclusividad y excelencia.</em></p>
+        <p>Dotado de la mejor tecnología, tanto en sonido como en iluminación, permitiendo su rápida adaptación al evento que Ud. desea realizar.</p>
+        <p>Provisto de un tratamiento de acustización integral, a través de materiales absorbentes, difusores y reflejantes que permiten lograr una sonoridad interna excelente y evitan de esta forma que el sonido invada los armoniosos jardines.</p>
+        <p>Brindamos una propuesta de primer nivel pensado para aquellas personas que buscan realizar un evento exigente, exclusivo y de excelencia en el servicio en la que ofrecemos diferentes proveedores destacados por su trayectoria elegidos a través de una selectiva y rigurosa selección, para que en su fiesta no quede detalle librado al azar y poder mantener la excelencia y calidad de nuestras prestaciones.</p>
+        <p>La exclusividad del uso de las instalaciones, la majestuosidad de nuestros diversos espacios y la comodidad del estacionamiento propio nos permiten anticipar el éxito de su evento.</p>
+        <p><strong>LOUNGE PILAR</strong></p>
+        <p>Un sitio ideal para que sus agasajados disfruten de una majestuosa recepción de bienvenida, en el inicio del evento, previo al ingreso al salón "Soul Pilar" fue diseñado en concordancia con la cultura que su nombre inspira, invitando a los comensales a escuchar música ambiental y degustar los manjares que la cocina proponga. Alternativamente, el salón se ofrece en forma individual, en aquellos eventos donde por las características del mismo o la cantidad limitada de invitados, no se requiera el uso del salón Soul Pilar.</p>
+        <p><strong>SOUL PILAR</strong></p>
+        <p>Fue diseñado con amplios ventanales, que sugieren maravillosas vistas de las áreas verdes y de los espejos de agua que rodean al recinto principal de Puro Pilar Eventos. Un espacio que recrea el "alma" de Pilar, diseñado para llevar a cabo todo tipo de eventos desde cenas formales, con o sin pista de baile, hasta refinados cócteles.</p>
+        <p><strong>DECK PILAR</strong></p>
+        <p>Ha sido concebido como la continuación natural del salón Lounge Pilar, donde profesionales de la arquitectura y el paisajismo han desarrollado áreas verdes rodeadas de espejos de agua, cascadas y fuentes, todo ello coronado con una arrogante piscina de grandes dimensiones. Este sitio es ideal para llevar a cabo recepciones al aire libre y celebrar ceremonias religiosas en un escenario de naturaleza y refinado gusto.</p>
+      </div>
+      <br>
+      <div class="servicios">
+        <div class="container">
+          <h4>Servicios Ofrecidos</h4>
+          <ul>
+            <li>Salón</li>
+            <li>Pileta</li>
+            <li>Disc Jockey</li>
+          </ul>
+        </div>
+      </div>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" width="700" height="394" src="https://www.youtube.com/embed/S6FUh6lRqSw?ecver=1"  allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h4>Capacidad:<small>&nbsp; Desde: 50 Hasta: 250 pax</small></h4>
+      <h4>Precio:<small>&nbsp; Desde: $ 300 Hasta: $ 1.000 por cubieto</small></h4>
+      <h4>Promoción:<small>&nbsp; Burro de regalo</small></h4>
+      <h3>Consultar</h3>
+      <form>
+        <div class="form-group">
+          <input type="text" id="agasajado" name="agasajado" class="form-control" placeholder="Nombre Agasajado o Empresa">
+        </div>
+        <div class="form-group">
+          <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre Solicitante">
+        </div>
+        <div class="form-group">
+          <input type="text" id="telefono" name="telefono" class="form-control" placeholder="Teléfono">
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" class="form-control" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <select id="type" name="type"  class="form-control" tabindex="5"  >
+            <option value="Tipo">Tipo de Evento</option>
+            <option value="Empresarial">Empresarial</option>
+            <option value="Boda">Boda</option>
+            <option value="15 años">15 años</option>
+            <option value="Comunión">Comunión</option>
+            <option value="Bar Mitzva">Bar/Bat Mitzvá</option>
+            <option value="Aniversario">Aniversario</option>
+            <option value="Egreso/Graduación">Egreso/Graduación</option>
+            <option value="Boda">Cumpleaños</option>
+            <option value="15 años">Despedidas</option>
+            <option value="15 años">Reunión de Amigos</option>
+            <option value="Comunión">Otros</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <div class='input-group date' id='datetimepicker1'>
+            <input type='text' class="form-control" placeholder="Fecha">
+            <span class="input-group-addon"> <span class="glyphicon glyphicon-calendar"></span> </span> </div>
+          <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script> 
+        </div>
+        <div class="form-group">
+          <input type="number" id="pax" name="pax"  class="form-control ng-pristine ng-untouched ng-valid ng-empty" tabindex="7" placeholder="Cantidad de Invitados">
+        </div>
+        <div class="form-group">
+          <input type="text" id="lugar" name="lugar" class="form-control" placeholder="Lugar del Evento">
+        </div>
+        <div class="form-group">
+          <textarea id="comentario" name="comentario" class="form-control" placeholder="Comentario"></textarea>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox">
+            Deseo recibir información </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox">
+            Acepto términos y condiciones </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox">
+            Enviar a otros establecimientos de la zona </label>
+        </div>
+        <div class="g-recaptcha" data-sitekey="6LfANCITAAAAANqRlqyj2mpnd6rxUIMHNDs_5ULd"></div>
+        <button type="submit" class="btn btn-ttc">Enviar</button>
+      </form>
+      <h3>Ubicación</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6580.371240678835!2d-58.911624380104236!3d-34.44743571056197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9cdefea1d473%3A0xe9f96c26e26e428b!2sPuro+Pilar+Eventos!5e0!3m2!1ses!2sar!4v1498229072064" width="400" height="300"  style="border:0" allowfullscreen></iframe>
+      
+      <!----></div>
+  </div>
+</div>
+<!-- /.row -->
+
+<hr>
+<section id="contact" class="contact">
+  <div class="container">
+    <ul class="list-inline list-social">
+      <li class="social-whatsapp" title="whatsapp"> <a href="#"><i class="fa fa-whatsapp"></i></a> </li>
+      <li class="social-facebook" title="Seguinos en Facebook"> <a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li class="social-instagram" title="Seguinos en Instagram"> <a href="#"><i class="fa fa-instagram"></i></a> </li>
+      <li class="social-twitter" title="Seguinos en Twitter"> <a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li class="social-youtube" title="Seguinos en Youtube" > <a href="#"><i class="fa fa-youtube"></i></a></li>
+      <li class="social-google-plus" title="Seguinos en Google +"> <a href="#"><i class="fa fa-google-plus"></i></a></li>
+    </ul>
+  </div>
+</section>
+<hr>
+<!-- Projects Row --> 
+<!-- Projects Row -->
+<div class="container">
+  <div class="otros">
+    <h4>Servicios que colaboran Puro Pilar</h4>
+  </div>
+  <div class="row">
+    <div class="col-md-2 portfolio-item">
+      <div class="thumbnail"> <a href="#"> <img class="img-responsive" src="home/vergel.jpg" alt="Vergel del Bosque"> </a>
+        <div class="caption">
+          <h5><strong>Vergel del Bosque</strong></h5>
+          <p>Cuatro Salones...</p>
+          <p>Salones de Fiestas<br>
+            GBA Norte </p>
+          <p> <span class="consultar"> <a href="#" class="btn btn-ttc" role="button">Consultar</a> </span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 portfolio-item"> <a href="#"> <img class="img-thumbnail" src="home/capace-1.jpg" alt="La Casona de Capace"> </a> </div>
+    <div class="col-md-2 portfolio-item">
+      <div class="thumbnail"> <a href="#"> <img class="img-responsive" src="home/cristina.jpg" alt="Villa María Cristina"> </a>
+        <div class="caption">
+          <h5><strong>Villa María Cristina</strong></h5>
+          <p>Construida en el Año</p>
+          <p>Salones de Fiestas<br>
+            GBA Norte </p>
+          <p> <span class="consultar"> <a href="#" class="btn btn-ttc" role="button">Consultar</a> </span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 portfolio-item">
+      <div class="thumbnail"> <a href="#"> <img class="img-responsive" src="home/green.jpg" alt="Green House"> </a>
+        <div class="caption">
+          <h5><strong>Green House</strong></h5>
+          <p>Dos Salones </p>
+          <p>Salones de Fiestas<br>
+            GBA Norte </p>
+          <p> <span class="consultar"> <a href="#" class="btn btn-ttc" role="button">Consultar</a> </span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 portfolio-item">
+      <div class="thumbnail"> <a href="#"> <img class="img-responsive" src="home/vergel.jpg" alt="Vergel del Bosque"> </a>
+        <div class="caption">
+          <h5><strong>Vergel del Bosque</strong></h5>
+          <p>Cuatro Salones...</p>
+          <p>Salones de Fiestas<br>
+            GBA Norte </p>
+          <p> <span class="consultar"> <a href="#" class="btn btn-ttc" role="button">Consultar</a> </span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 portfolio-item">
+      <div class="thumbnail"> <a href="#"> <img class="img-responsive" src="home/vergel.jpg" alt="Vergel del Bosque"> </a>
+        <div class="caption">
+          <h5><strong>Vergel del Bosque</strong></h5>
+          <p>Cuatro Salone...</p>
+          <p>Salones de Fiestas<br>
+            GBA Norte </p>
+          <p> <span class="consultar"> <a href="#" class="btn btn-ttc" role="button">Consultar</a> </span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.row -->
+<hr>
+<!-- Wrapper for slides -->
+<div class="container">
+  <div class="col-md-12">
+    <h3>Si te gustó Puro Pilar tal vez te interese</h3>
+    <div class="well">
+      <div id="myCarousel" class="carousel slide"> 
+        
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="thumbnail"> <a href="#"> <img class="img-responsive" src="home/ballroom.jpg" alt=""> </a>
+                  <div class="caption">
+                    <h3>Ballroom Fiestas</h3>
+                    <p>Salón de Fiestas</p>
+                    <p>Salones de Fiestas<br>
+                      CABA </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3"><a href="#"> <img class="img-thumbnail" src="home/paloma-1.jpg" alt=""> </a> </div>
+              <div class="col-sm-3">
+                <div class="thumbnail"> <a href="#"> <img class="img-responsive" src="home/goyena.jpg" alt=""> </a>
+                  <div class="caption">
+                    <h3>Complejo Goyena</h3>
+                    <p>Dos salones interconectados</p>
+                    <p>Salones de Fiestas<br>
+                      CABA </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3"><a href="#"> <img class="img-thumbnail" src="home/azalia-1.jpg" alt=""> </a> </div>
+            </div>
+            <!--/row--> 
+          </div>
+          <!--/item-->
+          <div class="item">
+            <div class="row">
+              <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a> </div>
+              <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a> </div>
+              <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a> </div>
+              <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a> </div>
+            </div>
+            <!--/row--> 
+          </div>
+          <!--/item-->
+          <div class="item">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="thumbnail"> <img src="home/goyena.jpg" alt="Azalia">
+                  <div class="caption">
+                    <h3>Título de la imagen</h3>
+                    <p>...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a> </div>
+              <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a> </div>
+              <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a> </div>
+            </div>
+            <!--/row--> 
+          </div>
+          <!--/item--> 
+        </div>
+        <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a> <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a> </div>
+      <!--/myCarousel--> 
+    </div>
+    <!--/well--> 
+  </div>
+</div>
+
+<!-- /.row -->
+<hr>
+<!-- Footer -->
+<footer>
+  <div class="pie">
+    <div class="row">
+      <div class="col-md-1 col-md-offset-2 text-left footer-title">
+        <p><strong>Menú</strong></p>
+        <br>
+        <ul>
+          <li><a href="#">Wye</a></li>
+          <li><a href="#">Salones</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Infantiles</a></li>
+          <li><a href="#">Shows</a></li>
+          <li><a href="#">Mapa del sitio</a></li>
+        </ul>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-1 text-left footer-title">
+        <p><strong>Usuario</strong></p>
+        <br>
+        <ul>
+          <li><a href="#">Organizá tu Fiesta</a></li>
+          <li><a href="#">Registrate</a></li>
+          <li><a href="#">Anunciante</a></li>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6 ">
+        <div class="pull-right"><img class="img-responsive" src="img/wye-footer.png" title="WyE" alt="WyE"></div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <p class="text-justify">Salones de Fiestas - Hoteles - Quintas - Estancias - Islas - Barcos - Restaurantes - Confiterías - Boliches - Bares - Salones de Fiestas Infantiles - Animaciones Fiestas Infantiles - Catering - Barras de Tragos - Pastelería y Mesa Dulce - Organización de Eventos - Disc Jockey e Iluminación - Foto y Video - Ambientación y Decoración - Tarjetas - Cotillón - Vestidos de Novias - Ropa de Etiqueta - Maquillaje - Salones de Belleza - Flores y Ramos - Souvenirs - Fuegos Artificiales - Velas y Fanales - Vajilla y Mantelería - Carpas y Toldos - Alquiler de Autos - Alquiler de Livings - Casas de Regalos - Ceremonias - Animación para Adultos - Bandas y Tributos - Cómicos - Shows Coreográficos - Batucadas y Murgas - Maricahis - Locutores y Conductores - Bandas en Vivo - Show para Recepciones - Tango - Odaliscas - Jazz - Caricaturistas - Todo para el Civil - CGP - Registro Civil - Iglesias - Templos - Mezquitas</p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1" style="font-style: italic">
+        <p class="text-justify">WEB Y EVENTOS es un sitio de servicios de información publicitaria. No tiene relación alguna con las operaciones comerciales que se realicen directamente entre usuarios y anunciantes. La fidelidad de los datos presentados en cada subweb de los anunciantes es responsabilidad exclusiva de los mismos.</p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-md-11 text-right">
+        <p>© 2017 - CopyRight / Todos los derechos reservados / Legales / Version @version</p>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+  <br>
+</footer>
+
+<!-- /.container --> 
+
+<!-- jQuery --> 
+<script src="js/jquery.js"></script> 
+
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script> 
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+</body>
+</html>

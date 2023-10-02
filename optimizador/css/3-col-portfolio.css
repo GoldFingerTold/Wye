@@ -1,0 +1,9 @@
+body{padding-top:70px;}
+.portfolio-item{margin-bottom:25px;}
+footer{margin:50px 0;}
+.navbar-brand{margin-top:-10px;}
+.page-header{font-size:20px;margin-top:-5px;}
+.btn-ttc{color:#FFF;background-color:#E30613;!important}
+@media (min-width:768px){.pull{float:right !important;}
+.page-header{font-size:30px;margin-top:0px;}
+}
